@@ -15,3 +15,4 @@ if (LIFE_SETTINGS(getNumber,"spyGlass_toggle") isEqualTo 1) then {[] execVM "Spy
 
 [] execVM "core\init.sqf";
 [] execVM "briefing.sqf";
+[] execVM "core\scripts\fn_statusBar.sqf";
