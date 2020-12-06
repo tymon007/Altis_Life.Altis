@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1208;
+		nextID=1206;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9204.3535,39.331112,21642.227};
-		dir[]={-0.5790441,-0.55342364,0.59876353};
-		up[]={-0.38475186,0.8328687,0.39785543};
-		aside[]={0.71887743,1.3018143e-007,0.69520187};
+		pos[]={9185.083,69.53804,21601.018};
+		dir[]={-0.066162065,-0.62906361,0.7745648};
+		up[]={-0.053540844,0.77733344,0.62679827};
+		aside[]={0.99639416,2.4768087e-007,0.085111283};
 	};
 };
 binarizationWanted=0;
@@ -202,6 +202,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -216,24 +234,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -852,7 +852,7 @@ class Mission
 			text="@STR_MAR_Car_Shop";
 			type="c_car";
 			colorName="ColorGreen";
-			angle=359.19193;
+			angle=359.19196;
 			id=56;
 			atlOffset=0.0003490448;
 		};
@@ -875,7 +875,7 @@ class Mission
 			text="@STR_MAR_DMV";
 			type="c_unknown";
 			colorName="ColorBlue";
-			angle=358.09689;
+			angle=358.09692;
 			id=58;
 			atlOffset=0.00047683716;
 		};
@@ -1189,7 +1189,7 @@ class Mission
 			text="@STR_MAR_Drug_Dealer";
 			type="mil_dot";
 			colorName="ColorRed";
-			angle=302.06693;
+			angle=302.06696;
 			id=88;
 			atlOffset=0.00025558472;
 		};
@@ -1788,7 +1788,7 @@ class Mission
 			text="@STR_MAR_Garage";
 			type="o_service";
 			colorName="ColorGreen";
-			angle=168.39297;
+			angle=168.39299;
 			id=148;
 			atlOffset=-0.00031471252;
 		};
@@ -1809,7 +1809,7 @@ class Mission
 			text="@STR_MAR_Garage";
 			type="o_service";
 			colorName="ColorGreen";
-			angle=136.74797;
+			angle=136.74799;
 			id=150;
 			atlOffset=0.0004901886;
 		};
@@ -42038,19 +42038,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9187.8691,14.353231,21675.361};
-						angles[]={0.0053232545,3.1694479,0.0093200579};
+						position[]={9186.9961,14.361476,21673.293};
+						angles[]={0.0053232545,3.1694479,6.2818413};
 					};
 					side="Civilian";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[localize ""STR_MAR_Rebel_Weapon_Shop"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide isEqualTo civilian',5]; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide isEqualTo civilian ',5]; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ',5];";
+						init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Rebel_Market"",life_fnc_virt_menu,""rebel"",1.5,true,true,"""",""true"",5]; this addAction[localize ""STR_MAR_Rebel_Weapon_Shop"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide isEqualTo civilian',5]; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide isEqualTo civilian ',5]; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ',5];";
 						name="reb_2";
 						disableSimulation=1;
 					};
-					id=1207;
+					id=1205;
 					type="O_Soldier_F";
 					class CustomAttributes
 					{
@@ -42118,7 +42118,7 @@ class Mission
 			class Attributes
 			{
 			};
-			id=1206;
+			id=1204;
 		};
 	};
 };
