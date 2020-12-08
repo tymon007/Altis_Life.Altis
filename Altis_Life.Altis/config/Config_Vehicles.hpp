@@ -56,7 +56,8 @@ class CarShops {
             { "O_Truck_03_device_F", "" },
             { "C_Van_01_fuel_F", "" },
             { "I_Truck_02_fuel_F", "" },
-            { "B_Truck_01_fuel_F", "" }
+            { "B_Truck_01_fuel_F", "" },
+			{ "C_Van_02_vehicle_F", "" }
         };
     };
 
@@ -103,7 +104,8 @@ class CarShops {
             { "C_Offroad_01_F", "" },
             { "I_Truck_02_medical_F", "" },
             { "O_Truck_03_medical_F", "" },
-            { "B_Truck_01_medical_F", "" }
+            { "B_Truck_01_medical_F", "" },
+			{ "C_Van_02_medevac_F", "" }
         };
     };
 
@@ -877,7 +879,23 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
 	class C_Van_02_transport_F {
-		vItemSpace = 100;
+		vItemSpace = 100;          //DO ZMIANYYYYYYY
+		vFuelSpace = 50000;
+		conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
+		price = 150000;
+		textures[] = {};
+	};
+
+	class C_Van_02_vehicle_F {
+		vItemSpace = 100;     // DO ZMIANYYYYYYYYYY
+		vFuelSpace = 50000;
+		conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
+		price = 150000;
+		textures[] = {};
+	};
+
+	class C_Van_02_medevac_F {
+		vItemSpace = 100;     // DO ZMIANYYYYYYYYYY
 		vFuelSpace = 50000;
 		conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
 		price = 150000;

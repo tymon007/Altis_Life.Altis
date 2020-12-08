@@ -28,6 +28,9 @@ _lightLeft setLightAmbient [0.1,0.1,1];
     case "C_Offroad_01_F": {
         [[-0.37, 0.0, 0.56], [0.37, 0.0, 0.56]];
     };
+	case"C_Van_02_medevac_F":{
+	[[-0.5, 1.6, 1.45], [0.5, 1.6, 1.45]];
+	};
     default {
         [[-1], [-1]];
     };
