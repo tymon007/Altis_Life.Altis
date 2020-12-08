@@ -26,7 +26,8 @@ class CarShops {
             { "C_SUV_01_F", "" },
             { "C_Hatchback_01_sport_F", "" },
             { "C_Van_01_transport_F", "" },
-            { "C_Offroad_02_unarmed_F", "" } //Apex DLC
+            { "C_Offroad_02_unarmed_F", "" },
+			{ "C_Van_02_transport_F", "" }
         };
     };
 
@@ -874,4 +875,12 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 250000;
         textures[] = {};
     };
+
+	class C_Van_02_transport_F {
+		vItemSpace = 100;
+		vFuelSpace = 50000;
+		conditions = "license_civ_trucking || {!(playerSide isEqualTo civilian)}";
+		price = 150000;
+		textures[] = {};
+	};
 };
